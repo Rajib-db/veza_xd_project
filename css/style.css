@@ -1014,6 +1014,7 @@ button:focus {
 
 .footer_bg {
   background: #333;
+  background: url(/img/footer/footer_bg-1.png);
 }
 
 .footer_bg.footer_height {
