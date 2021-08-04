@@ -1,0 +1,25 @@
+.copy_right_area{
+    padding: 3rem 0;
+}
+.copy_social{
+    display: flex;
+    .copy_social_item{
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 3.6rem;
+        background: $linear_gradient;
+        color: $white;
+        margin-right: 1.5rem;
+        transition: .3s ease-in-out;
+
+        &:hover{
+            background: $linear_hover;
+        }
+    }
+
+    @media #{$mobile}{
+        margin-bottom: 2rem;
+    }
+}

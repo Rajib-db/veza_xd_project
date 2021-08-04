@@ -1,0 +1,141 @@
+// banner css
+.bg_hight {
+    min-height: 92rem;
+
+    @media #{$medium_device} {
+        min-height: 60rem;
+    }
+
+    @media #{$tab} {
+        min-height: 60rem;
+    }
+}
+
+.banner_pt {
+    padding-top: 7.5rem;
+
+    @media #{$medium_device} {
+        padding-top: 16.5rem;
+    }
+
+    @media #{$tab} {
+        padding-top: 20rem;
+    }
+}
+
+.banner {
+    &__title {
+        margin-bottom: 4.5rem;
+
+        @media #{$medium_device}{
+            font-size: 5rem;
+        }
+    }
+
+    &__form {
+        .pass {
+            font-size: 1.6rem;
+            color: $text_color;
+            display: inline-block;
+            text-decoration: underline;
+            margin-bottom: 3rem;
+        }
+
+        .btn_2 {
+            margin-right: 2rem;
+        }
+    }
+
+}
+
+.banner_img {
+    padding-left: 14.5rem;
+    margin-right: -29.3rem;
+
+    @media #{$extra_big_screen} {
+        padding-left: 0;
+        margin-right: -15.3rem;
+    }
+
+    @media #{$tab} {
+        display: none;
+    }
+
+    @media #{$tab_device} {
+        display: block;
+    }
+
+    .banner_img1 {
+        position: absolute;
+        top: 20rem;
+        right: 4rem;
+        z-index: 2;
+        animation: UpdownMoving 2s alternate infinite;
+
+        @media #{$extra_big_screen}{
+            right: 0;
+        }
+        @media #{$big_screen} {
+            top: 20rem;
+            right: -9rem;
+        }
+
+        @media #{$medium_device} {
+            top: 16rem;
+            right: -5rem;
+            width: 550px;
+            object-fit: cover;
+        }
+
+        @media #{$tab_device} {
+            top: 23rem;
+            right: -6rem;
+            display: block;
+            width: 450px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    .banner_img2 {
+        animation: RoundCercle 8s linear infinite;
+
+        @media #{$big_screen} {
+            position: absolute;
+            top: 170px;
+            right: -98px;
+        }
+
+        @media #{$medium_device} {
+            position: absolute;
+            top: 123px;
+            right: -46px;
+            width: 550px;
+            object-fit: cover;
+        }
+
+        @media #{$tab_device} {
+            position: absolute;
+            top: 188px;
+            right: 0;
+            width: 400px;
+            height: 450px;
+            object-fit: contain;
+        }
+    }
+
+    .banner_img3 {
+        position: absolute;
+        top: -2.7rem;
+        right: -9.1rem;
+        z-index: -5;
+
+        @media #{$medium_device} {
+            display: none;
+        }
+
+        @media #{$tab_device} {
+            display: none;
+        }
+    }
+}

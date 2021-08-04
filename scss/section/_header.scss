@@ -1,0 +1,23 @@
+// header css
+.header_absolute {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header {
+    .navbar-nav {
+        .nav-item {
+            &:not(:last-child) {
+                margin-right: 4.5rem;
+            }
+
+            .nav-link {
+                font-size: 2rem;
+                color: $text_color_2;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.footer_bg{
+    background: #333;
+    &.footer_height{
+        min-height: 77rem;
+
+        @media #{$mobile}{
+            min-height: 65rem;
+        }
+    }
+}
+
+.bz_subscribe{
+    padding-top: 7rem;
+}

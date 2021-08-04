@@ -1,0 +1,41 @@
+.network{
+    margin-bottom: 145px;
+    @media #{$tab}{
+        margin-bottom: 8rem;
+    }
+    &__img{
+        img{
+            animation: UpdownMoving 2s alternate infinite;
+        }
+    }
+    &__content{
+        margin-left: 8rem;
+        @media #{$tab}{
+            margin-left: 0;
+            margin-top: 2rem;
+        }
+        &__title{
+            font-weight: weight(Semi-bold);
+            margin-bottom: 3.5rem;
+        }
+    }
+}
+
+.client{
+    padding-bottom: 12rem;
+    &__content{
+        &__title{
+            font-weight: weight(Semi-bold);
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__img{
+        @media #{$tab}{
+            margin-bottom: 3.5rem;
+        }
+        img{
+            animation: UpdownMoving 2s alternate infinite;
+        }
+    }
+}

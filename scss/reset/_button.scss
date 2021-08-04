@@ -1,0 +1,132 @@
+/******** bottom css ********/
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.box_btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: weight(regular);
+    border-radius: 4.7rem;
+    @include transform_time(background-color .5s ease-out);
+    font-family: $heading_font;
+    text-align: center;
+
+    &.xxl_btn {
+        padding: 2rem 3rem;
+    }
+
+    &.xl_btn {
+        padding: 2.2rem 6rem;
+    }
+
+    &.lg_btn {
+        padding: 2.2rem 7rem;
+
+        @media #{$mobile}{
+            padding: 2.2rem 6rem;
+        }
+    }
+
+    &.md_btn {
+        padding: 1.2rem 2.5rem;
+    }
+
+    &.xs_btn {
+        padding: 1.4rem 2.6rem;
+    }
+
+    &.btn_1 {
+        background: $linear_gradient;
+        box-shadow: 0 10px 25px rgba(0, 119, 255, 0.30);
+        color: $white;
+
+        &:hover {
+            background: $linear_hover;
+            color: $white;
+        }
+    }
+
+    &.btn_2 {
+        background-color: $white;
+        border: 1px solid #E9E7F1;
+        color: $text_color;
+
+        &:hover {
+            background: $linear_gradient;
+            border-color: #E9E7F1;
+            color: $white;
+
+        }
+    }
+
+    &.btn_3 {
+        background-color: $btn_bg;
+        border: 1px solid $btn_bg;
+        color: $white;
+
+        &:hover {
+            background-color: $btn_bg;
+            border-color: $btn_bg;
+            color: $white;
+        }
+    }
+
+    &.btn_4 {
+        background-color: $btn_bg;
+        border: 1px solid $btn_bg;
+        color: $white;
+
+        &:hover {
+            background-color: $primary_color;
+            border-color: $primary_color;
+            color: $white;
+        }
+    }
+
+    &.btn_5 {
+        border: 1px solid rgba($color: $white, $alpha: .1);
+        color: $white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $heading_font;
+        padding: 17px 40px;
+
+        &:hover {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+        }
+    }
+
+    &.base_btn {
+        background-color: $base_color_1;
+        border: 2px solid $base_color_1;
+        color: $white;
+
+        &:hover {
+            background-color: $heading_color;
+            border-color: $heading_color;
+            color: $white;
+        }
+    }
+
+    &.white_btn {
+        background-color: $white;
+        border: 2px solid $white;
+        color: $heading_color;
+
+        &:hover {
+            border-color: $base_color_1;
+            color: $white;
+            background-color: $base_color_1;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// fonts
+$body_font:'Sofia Pro';
+$heading_font: 'Sofia Pro';
+$body_font_size: 1.8rem;
+
+// theme color
+$primary_color: #00E7FF - #0077FF;
+//color
+$body_color: #686777;
+$white: rgb(255, 255, 255);
+$heading_color:#191C1F;
+$text_color: #686777;
+$text_color_2:#707070;
+$bg_color: #FDFDFF;
+$linear_gradient:rgb(0,119,255) linear-gradient(90deg, rgba(0,119,255,1) 0%, rgba(0,231,255,1) 100%, rgba(8,172,79,1) 100%);
+$linear_hover: rgb(0,231,255) linear-gradient(90deg, rgba(0,231,255,1) 0%, rgba(0,119,255,1) 100%, rgba(8,172,79,1) 100%);
+
+$secondary_color:#14193B;
+$body_color: #FAFAFA;
+$border_color: #EBF9FF;
+$shadow_color:rgba(0, 0, 0, 0.03);
+$btn_bg: $primary_color;
+$start-color:#F5A021;
+$black: rgb(0, 0, 0);
+$base_color_1: rgb(242, 101, 34);
+$base_color_2: rgb(242, 101, 34);
+$menu_color: hsl(0, 0%, 100%);
+
+//typography
+$h1_font_size: 5.6rem;
+$h2_font_size: 5rem;
+$h3_font_size: 4rem;
+$h4_font_size: 3rem;
+$h5_font_size: 2.4rem;
+$h6_font_size: 1.8rem;
+
+//font weight
+$font_weights: (
+    "regular": 400,
+    "medium": 500,
+    "Semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 800,
+    "black": 900
+);
+
+$font_extra_bold: 900;
+$font_bold: 700;
+$font_semi_bold: 600;
+$font_medium: 500;
+$font_ragular: 400;
+$font_light: 300;
+
+//font line height
+$body_line_height: 1.2;
+$h1_line_height: 1.2;
+$h2_line_height: 1.2;
+$h3_line_height: 1.2;
+$h4_line_height: 1.2;
+$h5_line_height: 1.4;
+
+$big_device: '(min-width: 1400px)';
+$tab: '(max-width: 991px)';
+$mobile:'(max-width: 767.98px)';
+$wide_mobile:'only screen and (min-width: 480px) and (max-width: 767.98px)';
+
+$extra_big_screen: 'only screen and (min-width: 1400px) and (max-width: 1680px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1441px)';
+
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767.98px)';
