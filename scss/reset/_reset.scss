@@ -11,14 +11,6 @@
 
 html {
     font-size: 62.5%;
-
-    @media #{$tab}{
-        font-size: 55%;
-    }
-
-    @media #{$mobile}{
-        font-size: 44%;
-    }
 }
 
 body {
@@ -140,7 +132,6 @@ button:focus,
 }
 
 @media (min-width: 1400px) {
-   
     .custom_container {
         max-width: 1200px;
         margin: 0 auto;
@@ -151,6 +142,15 @@ button:focus,
         margin: 0 auto;
     }
 }
+
+@media (max-width: 992px){
+    .custom_container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 // section padding
 .section_padding{
     padding-top: 14.5rem;
