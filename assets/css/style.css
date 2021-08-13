@@ -132,6 +132,17 @@ button:focus,
   overflow-y: hidden;
 }
 
+@media (min-width: 1400px) {
+  .custom_container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .custom_container_fluid {
+    max-width: 1737px;
+    margin: 0 auto;
+  }
+}
+
 .section_padding {
   padding-top: 14.5rem;
   padding-bottom: 14.5rem;
