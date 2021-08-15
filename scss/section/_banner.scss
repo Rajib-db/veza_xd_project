@@ -26,6 +26,7 @@
 .banner {
     &__title {
         margin-bottom: 4.5rem;
+        font-size: 100px;
 
         @media #{$medium_device}{
             font-size: 5rem;
