@@ -29,6 +29,9 @@ button:focus {
 
     &.lg_btn {
         padding: 2.2rem 7rem;
+        @media #{$tab}{
+            padding: 2.2rem 5rem;
+        }
 
         @media #{$mobile}{
             padding: 2.2rem 6rem;

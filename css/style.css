@@ -488,6 +488,12 @@ button:focus {
   padding: 2.2rem 7rem;
 }
 
+@media (max-width: 991px) {
+  .box_btn.lg_btn {
+    padding: 2.2rem 5rem;
+  }
+}
+
 @media (max-width: 767.98px) {
   .box_btn.lg_btn {
     padding: 2.2rem 6rem;
@@ -606,7 +612,7 @@ button:focus {
   z-index: 3;
 }
 
-.header .menu_fixed {
+.header.menu_fixed {
   position: fixed;
   top: 0;
   left: 0;
