@@ -1,5 +1,10 @@
 .bz_oppor_form{
     margin-bottom: 5.5rem;
+    .input-group{
+       @media #{$mobile}{
+        flex-direction: column;
+       }
+    }
 }
 
 .box{
@@ -20,6 +25,10 @@
         background: #CCEAFF;
         border-radius: 0.8rem;
         margin-right: 4.5rem;
+
+        @media #{$wide_mobile}{
+            margin-right: 1.5rem;
+        }
     }
 
     &__text{

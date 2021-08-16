@@ -13,7 +13,7 @@
     }
 
     @media #{$mobile} {
-        padding: 2rem 0rem;
+        padding: 2rem 2rem;
     }
 
     &.cta_bg {
@@ -25,11 +25,20 @@
     &__title {
         color: $white;
         margin-bottom: 2rem;
+
+        @media #{$mobile}{
+            font-size: 3rem;
+        }
     }
 
     &__btn {
         @media #{$tab} {
             text-align: center !important;
+        }
+        .box_btn.xl_btn {
+            @media #{$mobile}{
+                padding: 2.2rem 5rem;
+            }
         }
     }
 

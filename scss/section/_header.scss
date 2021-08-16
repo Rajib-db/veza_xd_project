@@ -8,24 +8,76 @@
 }
 
 .header {
-    &.menu_fixed {
+    &.sticky {
         position: fixed;
         top: 0;
         left: 0;
+        right: 0;
         width: 100%;
-        background: #ddd;
-        padding: 10px 0;
+        background: $white;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        padding: 1.6rem 0;
+        z-index: 22;
     }
+
+    .navbar-toggler {
+        padding: 0;
+
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            font-size: 3.2rem;
+            line-height: 1.5em;
+
+            i {
+                display: inline-block;
+            }
+
+            .fa-times {
+                display: block;
+            }
+
+            .fa-bars {
+                display: none;
+            }
+        }
+
+        &.collapsed {
+            .fa-bars {
+                display: block;
+            }
+
+            .fa-times {
+                display: none;
+            }
+        }
+    }
+
+
     .navbar-nav {
         .nav-item {
             &:not(:last-child) {
                 margin-right: 4.5rem;
+
+                @media #{$tab} {
+                    margin-right: 0;
+                    margin-bottom: 2rem;
+                }
             }
+  
 
             .nav-link {
                 font-size: 2rem;
                 color: $text_color_2;
             }
+        }
+
+        @media #{$tab} {
+            padding: 5rem 0;
         }
     }
 }

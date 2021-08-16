@@ -144,6 +144,13 @@ button:focus,
     }
 }
 
+@media (max-width: 576px){
+    .custom_container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 
 // section padding
 .section_padding{
@@ -156,17 +163,23 @@ button:focus,
     }
 
     @media #{$tab_device}{
-        padding-bottom: 0;
+        padding-bottom: 10rem;
     }
 
     @media #{$mobile}{
         padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 }
 
 .section_padding_2{
     padding-top: 15rem;
     padding-bottom: 15rem;
+
+    @media #{$tab}{
+        padding-top: 10rem;
+        padding-bottom: 10rem; 
+    }
 
     @media #{$mobile}{
         padding-top: 6rem;
@@ -189,6 +202,7 @@ button:focus,
 
         @media #{$mobile}{
             text-align: left;
+            font-size: 3rem;
         }
     }
 
@@ -244,6 +258,14 @@ button:focus,
     @media #{$tab}{
         width: 85%;
     }
+
+    @media #{$mobile}{
+        width: 100%;
+    }
+
+    @media #{$wide_mobile}{
+        width: 80%;
+    }
 }
 
 .bz_oppor_form{
@@ -269,18 +291,26 @@ button:focus,
                     color: $text_color;
                 }
             }
+
+            @media #{$mobile}{
+                width: 100%;
+            }
         }
 
         .input-search{
             position: absolute;
             top: 50%;
             left: 1.7rem;
-            z-index: 3;
+            z-index: 2;
             transform: translateY(-50%);
             font-size: 22px;
             i{
                 color: #0077FF;
                 display: inline-block;
+            }
+
+            @media #{$mobile}{
+                top: 3.8rem;
             }
         }
     }
@@ -306,6 +336,20 @@ button:focus,
 
     &:hover{
         background: $linear_hover;
+    }
+
+    @media #{$mobile}{
+        position: static;
+        margin-top: 2rem;
+        transform: translate(0);
+        padding: 2.2rem 7rem;
+    }
+
+    @media #{$wide_mobile}{
+        position: absolute;
+        margin-top: 0rem;
+        transform: translateY(-50%);
+        padding: 1.6rem 5rem;
     }
 }
 

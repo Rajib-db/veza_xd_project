@@ -7,7 +7,7 @@
     }
 
     @media #{$tab} {
-        min-height: 60rem;
+        min-height: 50rem;
     }
 }
 
@@ -19,16 +19,21 @@
     }
 
     @media #{$tab} {
-        padding-top: 20rem;
+        padding-top: 16rem;
+        padding-bottom: 8rem;
     }
 }
 
 .banner {
     &__title {
         margin-bottom: 4.5rem;
-        
-        @media #{$medium_device}{
+
+        @media #{$tab}{
             font-size: 5rem;
+        }
+
+        @media #{$mobile}{
+            font-size: 3.5rem;
         }
     }
 
@@ -43,6 +48,15 @@
 
         .btn_2 {
             margin-right: 2rem;
+
+            @media #{$mobile}{
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+
+            @media #{$wide_mobile}{
+                margin-right: 2rem;
+            }
         }
     }
 

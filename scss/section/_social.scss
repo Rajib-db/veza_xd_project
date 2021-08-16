@@ -2,12 +2,8 @@
     padding-top: 10rem;
 
     @media #{$tab} {
-        padding-top: 10rem;
-        padding-bottom: 50px;
-    }
-
-    @media #{$mobile} {
-        padding-top: 0;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 }
 
@@ -15,6 +11,10 @@
     &__title {
         text-transform: capitalize;
         margin-bottom: 2.5rem;
+
+        @media #{$mobile}{
+            font-size: 3.5rem;
+        }
     }
 
     &__subtitle {
