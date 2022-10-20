@@ -5,12 +5,12 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,8 +24,7 @@ body {
 input:hover,
 input:focus {
   outline: none !important;
-  -webkit-box-shadow: 0px 0px 0px 0px transparent;
-          box-shadow: 0px 0px 0px 0px transparent;
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 :focus {
@@ -44,7 +43,6 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -64,7 +62,6 @@ h6 {
   font-weight: 800;
   margin-top: 0;
   line-height: 1.5;
-  -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -117,16 +114,13 @@ button:focus,
 .btn:focus {
   text-decoration: none;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .custom-file-input:focus ~ .custom-file-label {
   border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .overflow_x {
@@ -231,47 +225,21 @@ button:focus,
   }
 }
 
-@-webkit-keyframes UpdownMoving {
-  0% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
 @keyframes UpdownMoving {
   0% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
-@-webkit-keyframes RoundCercle {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: translateY(10px);
   }
 }
 
 @keyframes RoundCercle {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -286,26 +254,12 @@ button:focus,
   height: auto;
   margin-bottom: 2.5rem;
   background-clip: border-box;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .krb_input:focus {
   border: 0.1rem solid #007000;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.krb_input:focus::-webkit-input-placeholder {
-  color: #191C1F;
-}
-
-.krb_input:focus:-ms-input-placeholder {
-  color: #191C1F;
-}
-
-.krb_input:focus::-ms-input-placeholder {
-  color: #191C1F;
+  box-shadow: none;
 }
 
 .krb_input:focus::placeholder {
@@ -340,27 +294,13 @@ button:focus,
   font-size: 1.8rem;
   height: auto;
   background-clip: border-box;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 0;
 }
 
 .bz_oppor_form .input-group .bz_input:focus {
   border: 0.1rem solid #E9E7F1;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.bz_oppor_form .input-group .bz_input:focus::-webkit-input-placeholder {
-  color: #686777;
-}
-
-.bz_oppor_form .input-group .bz_input:focus:-ms-input-placeholder {
-  color: #686777;
-}
-
-.bz_oppor_form .input-group .bz_input:focus::-ms-input-placeholder {
-  color: #686777;
+  box-shadow: none;
 }
 
 .bz_oppor_form .input-group .bz_input:focus::placeholder {
@@ -378,8 +318,7 @@ button:focus,
   top: 50%;
   left: 1.7rem;
   z-index: 2;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 22px;
 }
 
@@ -401,23 +340,19 @@ button:focus,
   font-size: 2rem;
   font-weight: 400;
   border-radius: 3.2rem !important;
-  -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   font-family: "Sofia Pro";
   text-align: center;
-  background: #0077ff -webkit-gradient(linear, left top, right top, from(#0077ff), color-stop(100%, #00e7ff), to(#08ac4f));
   background: #0077ff linear-gradient(90deg, #0077ff 0%, #00e7ff 100%, #08ac4f 100%);
   border: none;
   color: white;
   position: absolute;
   top: 50%;
   right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .sub_btn:hover {
-  background: #00e7ff -webkit-gradient(linear, left top, right top, from(#00e7ff), color-stop(100%, #0077ff), to(#08ac4f));
   background: #00e7ff linear-gradient(90deg, #00e7ff 0%, #0077ff 100%, #08ac4f 100%);
 }
 
@@ -425,8 +360,7 @@ button:focus,
   .sub_btn {
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     padding: 2.2rem 7rem;
   }
 }
@@ -435,8 +369,7 @@ button:focus,
   .sub_btn {
     position: absolute;
     margin-top: 0rem;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     padding: 1.6rem 5rem;
   }
 }
@@ -447,13 +380,11 @@ button:focus,
 }
 
 .zoom_in_effect .zoom_in_img {
-  -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
   transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .zoom_in_effect:hover .zoom_in_img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .font_300 {
@@ -481,10 +412,8 @@ button:focus,
 }
 
 .wsi_scroll_top {
-  display: -ms-inline-grid;
   display: inline-grid;
   place-items: center;
-  background: #0077ff -webkit-gradient(linear, left top, right top, from(#0077ff), color-stop(100%, #00e7ff), to(#08ac4f));
   background: #0077ff linear-gradient(90deg, #0077ff 0%, #00e7ff 100%, #08ac4f 100%);
   width: 50px;
   height: 50px;
@@ -493,7 +422,6 @@ button:focus,
   position: fixed;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
@@ -504,7 +432,6 @@ button:focus,
 
 .wsi_scroll_top:hover {
   cursor: pointer;
-  background: #00e7ff -webkit-gradient(linear, left top, right top, from(#00e7ff), color-stop(100%, #0077ff), to(#08ac4f));
   background: #00e7ff linear-gradient(90deg, #00e7ff 0%, #0077ff 100%, #08ac4f 100%);
   color: white;
 }
@@ -535,7 +462,6 @@ button:focus {
   font-size: 2rem;
   font-weight: 400;
   border-radius: 4.7rem;
-  -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   font-family: "Sofia Pro";
   text-align: center;
@@ -574,15 +500,12 @@ button:focus {
 }
 
 .box_btn.btn_1 {
-  background: #0077ff -webkit-gradient(linear, left top, right top, from(#0077ff), color-stop(100%, #00e7ff), to(#08ac4f));
   background: #0077ff linear-gradient(90deg, #0077ff 0%, #00e7ff 100%, #08ac4f 100%);
-  -webkit-box-shadow: 0 10px 25px rgba(0, 119, 255, 0.3);
-          box-shadow: 0 10px 25px rgba(0, 119, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 119, 255, 0.3);
   color: white;
 }
 
 .box_btn.btn_1:hover {
-  background: #00e7ff -webkit-gradient(linear, left top, right top, from(#00e7ff), color-stop(100%, #0077ff), to(#08ac4f));
   background: #00e7ff linear-gradient(90deg, #00e7ff 0%, #0077ff 100%, #08ac4f 100%);
   color: white;
 }
@@ -594,7 +517,6 @@ button:focus {
 }
 
 .box_btn.btn_2:hover {
-  background: #0077ff -webkit-gradient(linear, left top, right top, from(#0077ff), color-stop(100%, #00e7ff), to(#08ac4f));
   background: #0077ff linear-gradient(90deg, #0077ff 0%, #00e7ff 100%, #08ac4f 100%);
   border-color: #E9E7F1;
   color: white;
@@ -627,15 +549,9 @@ button:focus {
 .box_btn.btn_5 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: "Sofia Pro";
   padding: 17px 40px;
 }
@@ -684,8 +600,7 @@ button:focus {
   right: 0;
   width: 100%;
   background: white;
-  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   padding: 1.6rem 0;
   z-index: 22;
 }
@@ -695,8 +610,7 @@ button:focus {
 }
 
 .header .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: none;
   border: none;
 }
@@ -852,8 +766,7 @@ button:focus {
   right: 4rem;
   width: 40%;
   z-index: 2;
-  -webkit-animation: UpdownMoving 2s alternate infinite;
-          animation: UpdownMoving 2s alternate infinite;
+  animation: UpdownMoving 2s alternate infinite;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1680px) {
@@ -874,8 +787,7 @@ button:focus {
     top: 16rem;
     right: -5rem;
     width: 550px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -886,14 +798,12 @@ button:focus {
     display: block;
     width: 450px;
     height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
 .banner_img .banner_img2 {
-  -webkit-animation: RoundCercle 8s linear infinite;
-          animation: RoundCercle 8s linear infinite;
+  animation: RoundCercle 8s linear infinite;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1441px) {
@@ -910,8 +820,7 @@ button:focus {
     top: 123px;
     right: -46px;
     width: 550px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -922,8 +831,7 @@ button:focus {
     right: 0;
     width: 400px;
     height: 450px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 
@@ -952,10 +860,7 @@ button:focus {
 
 @media (max-width: 767.98px) {
   .bz_oppor_form .input-group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -970,8 +875,7 @@ button:focus {
   background: white;
   border-radius: 1.6rem;
   padding: 1rem;
-  -webkit-box-shadow: 0px 10px 25px rgba(104, 103, 119, 0.1);
-          box-shadow: 0px 10px 25px rgba(104, 103, 119, 0.1);
+  box-shadow: 0px 10px 25px rgba(104, 103, 119, 0.1);
 }
 
 .box__icon {
@@ -1044,8 +948,7 @@ button:focus {
 }
 
 .social_img img {
-  -webkit-animation: UpdownMoving 2s alternate infinite;
-          animation: UpdownMoving 2s alternate infinite;
+  animation: UpdownMoving 2s alternate infinite;
 }
 
 .bz_cta_wrap {
@@ -1074,7 +977,6 @@ button:focus {
 }
 
 .bz_cta_wrap.cta_bg {
-  background: #0077ff -webkit-gradient(linear, left top, right top, from(#0077ff), color-stop(100%, #00e7ff), to(#08ac4f));
   background: #0077ff linear-gradient(90deg, #0077ff 0%, #00e7ff 100%, #08ac4f 100%);
 }
 
@@ -1142,8 +1044,7 @@ button:focus {
 }
 
 .network__img img {
-  -webkit-animation: UpdownMoving 2s alternate infinite;
-          animation: UpdownMoving 2s alternate infinite;
+  animation: UpdownMoving 2s alternate infinite;
 }
 
 .network__content {
@@ -1184,8 +1085,7 @@ button:focus {
 }
 
 .client__img img {
-  -webkit-animation: UpdownMoving 2s alternate infinite;
-          animation: UpdownMoving 2s alternate infinite;
+  animation: UpdownMoving 2s alternate infinite;
 }
 
 .footer_bg {
@@ -1215,8 +1115,6 @@ button:focus {
 }
 
 .copy_social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1226,16 +1124,13 @@ button:focus {
   border-radius: 50%;
   text-align: center;
   line-height: 3.6rem;
-  background: #0077ff -webkit-gradient(linear, left top, right top, from(#0077ff), color-stop(100%, #00e7ff), to(#08ac4f));
   background: #0077ff linear-gradient(90deg, #0077ff 0%, #00e7ff 100%, #08ac4f 100%);
   color: white;
   margin-right: 1.5rem;
-  -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .copy_social .copy_social_item:hover {
-  background: #00e7ff -webkit-gradient(linear, left top, right top, from(#00e7ff), color-stop(100%, #0077ff), to(#08ac4f));
   background: #00e7ff linear-gradient(90deg, #00e7ff 0%, #0077ff 100%, #08ac4f 100%);
 }
 
