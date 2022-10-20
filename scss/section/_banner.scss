@@ -27,6 +27,7 @@
 .banner {
     &__title {
         margin-bottom: 4.5rem;
+        font-size: 50px;
 
         @media #{$tab}{
             font-size: 5rem;

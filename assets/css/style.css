@@ -697,6 +697,7 @@ button:focus {
 
 .banner__title {
   margin-bottom: 4.5rem;
+  font-size: 50px;
 }
 
 @media (max-width: 991px) {
