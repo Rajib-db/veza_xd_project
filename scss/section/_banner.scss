@@ -63,6 +63,7 @@
 }
 
 .banner_img {
+    
     padding-left: 14.5rem;
     margin-right: -29.3rem;
 
@@ -83,6 +84,7 @@
         position: absolute;
         top: 20rem;
         right: 4rem;
+        width: 40%;
         z-index: 2;
         animation: UpdownMoving 2s alternate infinite;
 
